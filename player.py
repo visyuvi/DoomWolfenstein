@@ -67,7 +67,7 @@ class Player:
         self.rel = pg.mouse.get_rel()[0]
         self.rel = max(-MOUSE_MAX_REL, min(MOUSE_MAX_REL, self.rel))
         self.angle += self.rel * MOUSE_SENSITIVITY * self.game.delta_time
-        
+
     def update(self):
         self.movement()
         self.mouse_control()
